@@ -1,0 +1,73 @@
+/* Reset sederhana */
+* {
+    box-sizing: border-box;
+}
+
+/* 1. Selector Elemen & Warna 1 (Format Nama Warna: white) */
+body {
+    background-color: white;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+/* 2. Selector ID (#kartu-utama) & Box Model (Lebar tetap di tengah) */
+#kartu-utama {
+    width: 380px;                  /* Lebar tetap */
+    margin: 40px auto;             /* Posisi di tengah */
+    padding: 24px;                 /* Padding */
+    /* Warna 2 (Format HEX: #f8fafc) */
+    background-color: #f8fafc;
+    border: 2px solid #cbd5e1;     /* Border */
+    border-radius: 12px;          /* Border radius */
+    text-align: center;            /* Alignment teks */
+}
+
+/* 3. Selector Grup (h1, h3) & Warna 3 (Format RGB: rgb(30, 41, 59)) */
+h1, h3 {
+    color: rgb(30, 41, 59);
+}
+
+h1 {
+    font-size: 22px;
+    text-transform: uppercase;     /* Text-transform */
+}
+
+/* 4. Selector Turunan / Descendant (.header .sub-judul) */
+.header .sub-judul {
+    color: #64748b;
+    font-size: 14px;
+    font-style: italic;
+    margin-top: -10px;
+}
+
+.deskripsi {
+    font-size: 14px;
+    color: #334155;
+    margin: 16px 0;
+}
+
+/* 5. Selector Class & Display Inline-Block (Elemen 1: Label Keahlian) */
+.label {
+    display: inline-block;        /* Inline-block elemen 1 */
+    background-color: #e2e8f0;
+    color: #1e293b;
+    padding: 5px 12px;
+    margin: 3px;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* 6. Display Inline-Block (Elemen 2: Tombol) */
+.tombol {
+    display: inline-block;        /* Inline-block elemen 2 */
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: rgb(37, 99, 235);
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 14px;
+}
